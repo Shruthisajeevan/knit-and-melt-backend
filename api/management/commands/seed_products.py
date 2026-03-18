@@ -6,8 +6,11 @@ class Command(BaseCommand):
     help = 'Seed initial products'
 
     def handle(self, *args, **kwargs):
-        Product.objects.all().delete()
-        Category.objects.all().delete()
+        if Product.objects.exists():
+            self.stdout.write('Products already exist, skipping.')
+            return
+        if Category.objects.exists():
+            Category.objects.all().delete()
 
         sweaters  = Category.objects.create(name='Sweaters',   slug='sweaters')
         chocs     = Category.objects.create(name='Chocolates', slug='chocolates')
