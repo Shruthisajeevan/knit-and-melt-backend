@@ -3,14 +3,14 @@ from api.models import Category, Product
 
 
 class Command(BaseCommand):
-    help = 'Seed initial products'
+    help = 'Seed initial products only if DB is empty'
 
     def handle(self, *args, **kwargs):
         if Product.objects.exists():
-            self.stdout.write('Products already exist, skipping.')
+            self.stdout.write(self.style.SUCCESS('Products already exist, skipping seed.'))
             return
-        if Category.objects.exists():
-            Category.objects.all().delete()
+
+        Category.objects.all().delete()
 
         sweaters  = Category.objects.create(name='Sweaters',   slug='sweaters')
         chocs     = Category.objects.create(name='Chocolates', slug='chocolates')
@@ -55,5 +55,4 @@ class Command(BaseCommand):
         for name,price,tag,weight,ptype,img in tea_data:
             Product.objects.create(category=tea, name=name, price=price, tag=tag, weight=weight, product_type=ptype, availability='in', label='Tea', image_url=img, emoji='🍵')
 
-        total = Product.objects.count()
-        self.stdout.write(self.style.SUCCESS(f'Seeded {total} products successfully!'))
+        self.stdout.write(self.style.SUCCESS(f'Seeded {Product.objects.count()} products!'))
