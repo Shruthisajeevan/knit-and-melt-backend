@@ -1,326 +1,1124 @@
 [
-  {"model": "api.category", "pk": 1, "fields": {"name": "Sweaters", "slug": "sweaters"}},
-  {"model": "api.category", "pk": 2, "fields": {"name": "Chocolates", "slug": "chocolates"}},
-  {"model": "api.category", "pk": 3, "fields": {"name": "Shawls", "slug": "shawls"}},
-  {"model": "api.category", "pk": 4, "fields": {"name": "Perfumes", "slug": "perfumes"}},
-  {"model": "api.category", "pk": 5, "fields": {"name": "Caps", "slug": "caps"}},
-  {"model": "api.category", "pk": 6, "fields": {"name": "Tea", "slug": "tea"}},
-
-  {"model": "api.product", "pk": 1, "fields": {
-    "category": 1, "name": "Floral Cable Knit", "price": "1850.00",
-    "tag": "Bestseller", "availability": "in", "label": "Ladies",
-    "image_url": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&q=80",
-    "colors": ["Ivory White", "Dusty Rose", "Blush", "Mauve"],
-    "sizes": ["XS", "S", "M", "L", "XL"],
-    "notes": "", "emoji": "🧥", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 2, "fields": {
-    "category": 1, "name": "Oversized Turtleneck", "price": "2200.00",
-    "tag": null, "availability": "in", "label": "Ladies",
-    "image_url": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&q=80",
-    "colors": ["Jet Black", "Wine Red", "Navy Blue", "Charcoal", "Cream"],
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "notes": "", "emoji": "🧥", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 3, "fields": {
-    "category": 1, "name": "Ribbed Longline Cardigan", "price": "2400.00",
-    "tag": "Low Stock", "availability": "lo", "label": "Ladies",
-    "image_url": "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=500&q=80",
-    "colors": ["Camel Tan", "Forest Green", "Slate Gray", "Cream"],
-    "sizes": ["S", "M", "L", "XL"],
-    "notes": "", "emoji": "🧥", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 4, "fields": {
-    "category": 1, "name": "Nordic Fair Isle", "price": "2100.00",
-    "tag": "New", "availability": "in", "label": "Ladies",
-    "image_url": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&q=80",
-    "colors": ["Ivory White", "Navy Blue", "Wine Red"],
-    "sizes": ["S", "M", "L", "XL"],
-    "notes": "", "emoji": "🧥", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 5, "fields": {
-    "category": 1, "name": "Merino Wool Luxury", "price": "4500.00",
-    "tag": "Premium", "availability": "in", "label": "Premium",
-    "image_url": "https://images.unsplash.com/photo-1614093302611-8efc4f438572?w=500&q=80",
-    "colors": ["Jet Black", "Charcoal", "Midnight", "Ivory White"],
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "notes": "", "emoji": "🧥", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 6, "fields": {
-    "category": 1, "name": "Cashmere Turtleneck", "price": "5200.00",
-    "tag": "Cashmere", "availability": "lo", "label": "Premium",
-    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&q=80",
-    "colors": ["Camel Tan", "Cream", "Slate Gray", "Navy Blue"],
-    "sizes": ["S", "M", "L", "XL"],
-    "notes": "", "emoji": "🧥", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 7, "fields": {
-    "category": 1, "name": "Heavyweight Hoodie", "price": "2200.00",
-    "tag": null, "availability": "in", "label": "Mens",
-    "image_url": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&q=80",
-    "colors": ["Jet Black", "Charcoal", "Navy Blue", "Forest Green"],
-    "sizes": ["S", "M", "L", "XL", "XXL", "3XL"],
-    "notes": "", "emoji": "🧥", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 8, "fields": {
-    "category": 1, "name": "Sherpa-Lined Full Zip", "price": "3200.00",
-    "tag": "Popular", "availability": "in", "label": "Mens",
-    "image_url": "https://images.unsplash.com/photo-1626497764746-6dc36546b388?w=500&q=80",
-    "colors": ["Camel Tan", "Olive", "Navy Blue", "Rust"],
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "notes": "", "emoji": "🧥", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 9, "fields": {
-    "category": 1, "name": "Alpaca Blend Oversized", "price": "4200.00",
-    "tag": null, "availability": "in", "label": "Premium",
-    "image_url": "https://images.unsplash.com/photo-1512327428406-f85d37e635ae?w=500&q=80",
-    "colors": ["Slate Gray", "Cream", "Teal"],
-    "sizes": ["S", "M", "L", "XL"],
-    "notes": "", "emoji": "🧥", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 10, "fields": {
-    "category": 1, "name": "Sherpa-Lined Pullover", "price": "2600.00",
-    "tag": null, "availability": "in", "label": "Ladies",
-    "image_url": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&q=80",
-    "colors": ["Ivory White", "Blush", "Mauve"],
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "notes": "", "emoji": "🧥", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-
-  {"model": "api.product", "pk": 11, "fields": {
-    "category": 2, "name": "Dark Chocolate 70%", "price": "280.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1511381939415-e44015466834?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🍫", "volume": "", "weight": "", "product_type": "Dark", "is_active": true
-  }},
-  {"model": "api.product", "pk": 12, "fields": {
-    "category": 2, "name": "Milk Chocolate Classic", "price": "220.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1548907040-4d42bda8ad3a?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🍬", "volume": "", "weight": "", "product_type": "Milk", "is_active": true
-  }},
-  {"model": "api.product", "pk": 13, "fields": {
-    "category": 2, "name": "Hazelnut Truffle Box", "price": "380.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1606312619070-d48b5c7a159c?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🌰", "volume": "", "weight": "", "product_type": "Truffle", "is_active": true
-  }},
-  {"model": "api.product", "pk": 14, "fields": {
-    "category": 2, "name": "Salted Caramel Filled", "price": "340.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1619266465172-02a857c3556d?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🍮", "volume": "", "weight": "", "product_type": "Filled", "is_active": true
-  }},
-  {"model": "api.product", "pk": 15, "fields": {
-    "category": 2, "name": "Almond Dark Bar", "price": "300.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1528825871115-3581a5387919?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🥜", "volume": "", "weight": "", "product_type": "Dark", "is_active": true
-  }},
-  {"model": "api.product", "pk": 16, "fields": {
-    "category": 2, "name": "Raspberry Ganache", "price": "360.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🫐", "volume": "", "weight": "", "product_type": "Ganache", "is_active": true
-  }},
-  {"model": "api.product", "pk": 17, "fields": {
-    "category": 2, "name": "Coffee Chocolate", "price": "290.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "☕", "volume": "", "weight": "", "product_type": "Dark", "is_active": true
-  }},
-  {"model": "api.product", "pk": 18, "fields": {
-    "category": 2, "name": "Gift Assorted Box", "price": "950.00",
-    "tag": "Popular", "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🎁", "volume": "", "weight": "", "product_type": "Gift", "is_active": true
-  }},
-  {"model": "api.product", "pk": 19, "fields": {
-    "category": 2, "name": "Pistachio Praline", "price": "400.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1511381939415-e44015466834?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🫘", "volume": "", "weight": "", "product_type": "Praline", "is_active": true
-  }},
-  {"model": "api.product", "pk": 20, "fields": {
-    "category": 2, "name": "Mint Crisp Dark", "price": "250.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1548907040-4d42bda8ad3a?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🌿", "volume": "", "weight": "", "product_type": "Dark", "is_active": true
-  }},
-  {"model": "api.product", "pk": 21, "fields": {
-    "category": 2, "name": "Coconut Dream", "price": "260.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1606312619070-d48b5c7a159c?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🥥", "volume": "", "weight": "", "product_type": "Milk", "is_active": true
-  }},
-  {"model": "api.product", "pk": 22, "fields": {
-    "category": 2, "name": "Rose Cardamom Truffle", "price": "340.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1619266465172-02a857c3556d?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🌹", "volume": "", "weight": "", "product_type": "Truffle", "is_active": true
-  }},
-  {"model": "api.product", "pk": 23, "fields": {
-    "category": 2, "name": "Champagne Truffle", "price": "450.00",
-    "tag": "Premium", "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1528825871115-3581a5387919?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🥂", "volume": "", "weight": "", "product_type": "Truffle", "is_active": true
-  }},
-  {"model": "api.product", "pk": 24, "fields": {
-    "category": 2, "name": "Saffron Milk Chocolate", "price": "420.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🌼", "volume": "", "weight": "", "product_type": "Milk", "is_active": true
-  }},
-  {"model": "api.product", "pk": 25, "fields": {
-    "category": 2, "name": "White Chocolate Bar", "price": "240.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🤍", "volume": "", "weight": "", "product_type": "White", "is_active": true
-  }},
-  {"model": "api.product", "pk": 26, "fields": {
-    "category": 2, "name": "Orange Zest Dark", "price": "270.00",
-    "tag": null, "availability": "in", "label": "Chocolate",
-    "image_url": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🍊", "volume": "", "weight": "", "product_type": "Dark", "is_active": true
-  }},
-
-  {"model": "api.product", "pk": 27, "fields": {
-    "category": 3, "name": "Pashmina Silk Blend", "price": "3200.00",
-    "tag": "Bestseller", "availability": "in", "label": "Shawl",
-    "image_url": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80",
-    "colors": ["Dusty Rose", "Ivory White", "Mauve", "Teal"],
-    "sizes": [],
-    "notes": "", "emoji": "🌿", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 28, "fields": {
-    "category": 3, "name": "Embroidered Kashmir Shawl", "price": "4800.00",
-    "tag": "Handcrafted", "availability": "in", "label": "Shawl",
-    "image_url": "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80",
-    "colors": ["Navy Blue", "Wine Red", "Forest Green"],
-    "sizes": [],
-    "notes": "", "emoji": "🌿", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 29, "fields": {
-    "category": 3, "name": "Wool Blend Stole", "price": "1950.00",
-    "tag": null, "availability": "in", "label": "Shawl",
-    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&q=80",
-    "colors": ["Camel Tan", "Charcoal", "Cream", "Mustard"],
-    "sizes": [],
-    "notes": "", "emoji": "🌿", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 30, "fields": {
-    "category": 3, "name": "Floral Printed Dupatta", "price": "1600.00",
-    "tag": "New", "availability": "in", "label": "Shawl",
-    "image_url": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80",
-    "colors": ["Blush", "Ivory White", "Cobalt"],
-    "sizes": [],
-    "notes": "", "emoji": "🌿", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-
-  {"model": "api.product", "pk": 31, "fields": {
-    "category": 4, "name": "Mountain Mist EDP", "price": "2800.00",
-    "tag": "Signature", "availability": "in", "label": "Perfume",
-    "image_url": "https://images.unsplash.com/photo-1541643600914-78b084683702?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "Cedar · Vetiver · Musk", "emoji": "🌸", "volume": "50ml", "weight": "", "product_type": "EDP", "is_active": true
-  }},
-  {"model": "api.product", "pk": 32, "fields": {
-    "category": 4, "name": "Nilgiri Bloom Attar", "price": "1850.00",
-    "tag": null, "availability": "in", "label": "Perfume",
-    "image_url": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "Rose · Jasmine · Sandalwood", "emoji": "🌸", "volume": "10ml", "weight": "", "product_type": "Attar", "is_active": true
-  }},
-  {"model": "api.product", "pk": 33, "fields": {
-    "category": 4, "name": "Cozy Winter Cologne", "price": "2200.00",
-    "tag": "Popular", "availability": "in", "label": "Perfume",
-    "image_url": "https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "Vanilla · Amber · Patchouli", "emoji": "🌸", "volume": "100ml", "weight": "", "product_type": "Cologne", "is_active": true
-  }},
-  {"model": "api.product", "pk": 34, "fields": {
-    "category": 4, "name": "Ooty Garden EDT", "price": "3200.00",
-    "tag": "Limited", "availability": "in", "label": "Perfume",
-    "image_url": "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "Green Tea · Bergamot · White Musk", "emoji": "🌸", "volume": "75ml", "weight": "", "product_type": "EDT", "is_active": true
-  }},
-
-  {"model": "api.product", "pk": 35, "fields": {
-    "category": 5, "name": "Classic Woolen Beanie", "price": "380.00",
-    "tag": null, "availability": "in", "label": "Cap",
-    "image_url": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=400&q=80",
-    "colors": ["Jet Black", "Navy Blue", "Wine Red", "Forest Green"],
-    "sizes": ["Free Size"],
-    "notes": "", "emoji": "🎩", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 36, "fields": {
-    "category": 5, "name": "Pom-Pom Knit Hat", "price": "450.00",
-    "tag": null, "availability": "in", "label": "Cap",
-    "image_url": "https://images.unsplash.com/photo-1609803384069-19f3f58e4d7a?w=400&q=80",
-    "colors": ["Ivory White", "Blush", "Wine Red", "Mustard"],
-    "sizes": ["Free Size"],
-    "notes": "", "emoji": "🎩", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 37, "fields": {
-    "category": 5, "name": "Fleece-Lined Ear Cap", "price": "520.00",
-    "tag": null, "availability": "in", "label": "Cap",
-    "image_url": "https://images.unsplash.com/photo-1529231024920-9d27cf93d6c8?w=400&q=80",
-    "colors": ["Jet Black", "Charcoal", "Camel Tan"],
-    "sizes": ["Free Size", "Kids"],
-    "notes": "", "emoji": "🎩", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-  {"model": "api.product", "pk": 38, "fields": {
-    "category": 5, "name": "Sherpa Ushanka Cap", "price": "650.00",
-    "tag": "Low Stock", "availability": "lo", "label": "Cap",
-    "image_url": "https://images.unsplash.com/photo-1510598155-b348f2fc74ce?w=400&q=80",
-    "colors": ["Camel Tan", "Cream", "Slate Gray"],
-    "sizes": ["Free Size"],
-    "notes": "", "emoji": "🎩", "volume": "", "weight": "", "product_type": "", "is_active": true
-  }},
-
-  {"model": "api.product", "pk": 39, "fields": {
-    "category": 6, "name": "Nilgiri Premium CTC", "price": "320.00",
-    "tag": "Bestseller", "availability": "in", "label": "Tea",
-    "image_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🍵", "volume": "", "weight": "250g", "product_type": "CTC", "is_active": true
-  }},
-  {"model": "api.product", "pk": 40, "fields": {
-    "category": 6, "name": "Ooty Special Green Tea", "price": "480.00",
-    "tag": "Organic", "availability": "in", "label": "Tea",
-    "image_url": "https://images.unsplash.com/photo-1563911892437-1feda0179e1b?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🍵", "volume": "", "weight": "100g", "product_type": "Green", "is_active": true
-  }},
-  {"model": "api.product", "pk": 41, "fields": {
-    "category": 6, "name": "Masala Chai Blend", "price": "280.00",
-    "tag": null, "availability": "in", "label": "Tea",
-    "image_url": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🍵", "volume": "", "weight": "200g", "product_type": "Masala", "is_active": true
-  }},
-  {"model": "api.product", "pk": 42, "fields": {
-    "category": 6, "name": "Earl Grey Reserve", "price": "560.00",
-    "tag": "Premium", "availability": "in", "label": "Tea",
-    "image_url": "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=500&q=80",
-    "colors": [], "sizes": [],
-    "notes": "", "emoji": "🍵", "volume": "", "weight": "100g", "product_type": "Earl Grey", "is_active": true
-  }}
+  {
+    "model": "api.category",
+    "pk": 1,
+    "fields": {
+      "name": "Sweaters",
+      "slug": "sweaters"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 2,
+    "fields": {
+      "name": "Chocolates",
+      "slug": "chocolates"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 3,
+    "fields": {
+      "name": "Shawls",
+      "slug": "shawls"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 4,
+    "fields": {
+      "name": "Perfumes",
+      "slug": "perfumes"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 5,
+    "fields": {
+      "name": "Caps",
+      "slug": "caps"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 6,
+    "fields": {
+      "name": "Tea",
+      "slug": "tea"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "Floral Cable Knit",
+      "price": "1850.00",
+      "tag": "Bestseller",
+      "availability": "in",
+      "label": "Ladies",
+      "image_url": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&q=80",
+      "colors": [
+        "Ivory White",
+        "Dusty Rose",
+        "Blush",
+        "Mauve"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "notes": "",
+      "emoji": "\ud83e\udde5",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "name": "Oversized Turtleneck",
+      "price": "2200.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Ladies",
+      "image_url": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&q=80",
+      "colors": [
+        "Jet Black",
+        "Wine Red",
+        "Navy Blue",
+        "Charcoal",
+        "Cream"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "notes": "",
+      "emoji": "\ud83e\udde5",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "name": "Ribbed Longline Cardigan",
+      "price": "2400.00",
+      "tag": "Low Stock",
+      "availability": "lo",
+      "label": "Ladies",
+      "image_url": "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=500&q=80",
+      "colors": [
+        "Camel Tan",
+        "Forest Green",
+        "Slate Gray",
+        "Cream"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "notes": "",
+      "emoji": "\ud83e\udde5",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "name": "Nordic Fair Isle",
+      "price": "2100.00",
+      "tag": "New",
+      "availability": "in",
+      "label": "Ladies",
+      "image_url": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&q=80",
+      "colors": [
+        "Ivory White",
+        "Navy Blue",
+        "Wine Red"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "notes": "",
+      "emoji": "\ud83e\udde5",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "name": "Merino Wool Luxury",
+      "price": "4500.00",
+      "tag": "Premium",
+      "availability": "in",
+      "label": "Premium",
+      "image_url": "https://images.unsplash.com/photo-1614093302611-8efc4f438572?w=500&q=80",
+      "colors": [
+        "Jet Black",
+        "Charcoal",
+        "Midnight",
+        "Ivory White"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "notes": "",
+      "emoji": "\ud83e\udde5",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 6,
+    "fields": {
+      "category": 1,
+      "name": "Cashmere Turtleneck",
+      "price": "5200.00",
+      "tag": "Cashmere",
+      "availability": "lo",
+      "label": "Premium",
+      "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&q=80",
+      "colors": [
+        "Camel Tan",
+        "Cream",
+        "Slate Gray",
+        "Navy Blue"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "notes": "",
+      "emoji": "\ud83e\udde5",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 7,
+    "fields": {
+      "category": 1,
+      "name": "Heavyweight Hoodie",
+      "price": "2200.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Mens",
+      "image_url": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&q=80",
+      "colors": [
+        "Jet Black",
+        "Charcoal",
+        "Navy Blue",
+        "Forest Green"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "3XL"
+      ],
+      "notes": "",
+      "emoji": "\ud83e\udde5",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 8,
+    "fields": {
+      "category": 1,
+      "name": "Sherpa-Lined Full Zip",
+      "price": "3200.00",
+      "tag": "Popular",
+      "availability": "in",
+      "label": "Mens",
+      "image_url": "https://images.unsplash.com/photo-1626497764746-6dc36546b388?w=500&q=80",
+      "colors": [
+        "Camel Tan",
+        "Olive",
+        "Navy Blue",
+        "Rust"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "notes": "",
+      "emoji": "\ud83e\udde5",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 9,
+    "fields": {
+      "category": 1,
+      "name": "Alpaca Blend Oversized",
+      "price": "4200.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Premium",
+      "image_url": "https://images.unsplash.com/photo-1512327428406-f85d37e635ae?w=500&q=80",
+      "colors": [
+        "Slate Gray",
+        "Cream",
+        "Teal"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "notes": "",
+      "emoji": "\ud83e\udde5",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 10,
+    "fields": {
+      "category": 1,
+      "name": "Sherpa-Lined Pullover",
+      "price": "2600.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Ladies",
+      "image_url": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&q=80",
+      "colors": [
+        "Ivory White",
+        "Blush",
+        "Mauve"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "notes": "",
+      "emoji": "\ud83e\udde5",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 11,
+    "fields": {
+      "category": 2,
+      "name": "Dark Chocolate 70%",
+      "price": "280.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1511381939415-e44015466834?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf6b",
+      "volume": "",
+      "weight": "",
+      "product_type": "Dark",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 12,
+    "fields": {
+      "category": 2,
+      "name": "Milk Chocolate Classic",
+      "price": "220.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1548907040-4d42bda8ad3a?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf6c",
+      "volume": "",
+      "weight": "",
+      "product_type": "Milk",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 13,
+    "fields": {
+      "category": 2,
+      "name": "Hazelnut Truffle Box",
+      "price": "380.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1606312619070-d48b5c7a159c?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf30",
+      "volume": "",
+      "weight": "",
+      "product_type": "Truffle",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 14,
+    "fields": {
+      "category": 2,
+      "name": "Salted Caramel Filled",
+      "price": "340.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1619266465172-02a857c3556d?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf6e",
+      "volume": "",
+      "weight": "",
+      "product_type": "Filled",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 15,
+    "fields": {
+      "category": 2,
+      "name": "Almond Dark Bar",
+      "price": "300.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1528825871115-3581a5387919?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83e\udd5c",
+      "volume": "",
+      "weight": "",
+      "product_type": "Dark",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 16,
+    "fields": {
+      "category": 2,
+      "name": "Raspberry Ganache",
+      "price": "360.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83e\uded0",
+      "volume": "",
+      "weight": "",
+      "product_type": "Ganache",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 17,
+    "fields": {
+      "category": 2,
+      "name": "Coffee Chocolate",
+      "price": "290.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\u2615",
+      "volume": "",
+      "weight": "",
+      "product_type": "Dark",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 18,
+    "fields": {
+      "category": 2,
+      "name": "Gift Assorted Box",
+      "price": "950.00",
+      "tag": "Popular",
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf81",
+      "volume": "",
+      "weight": "",
+      "product_type": "Gift",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 19,
+    "fields": {
+      "category": 2,
+      "name": "Pistachio Praline",
+      "price": "400.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1511381939415-e44015466834?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83e\uded8",
+      "volume": "",
+      "weight": "",
+      "product_type": "Praline",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 20,
+    "fields": {
+      "category": 2,
+      "name": "Mint Crisp Dark",
+      "price": "250.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1548907040-4d42bda8ad3a?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf3f",
+      "volume": "",
+      "weight": "",
+      "product_type": "Dark",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 21,
+    "fields": {
+      "category": 2,
+      "name": "Coconut Dream",
+      "price": "260.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1606312619070-d48b5c7a159c?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83e\udd65",
+      "volume": "",
+      "weight": "",
+      "product_type": "Milk",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 22,
+    "fields": {
+      "category": 2,
+      "name": "Rose Cardamom Truffle",
+      "price": "340.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1619266465172-02a857c3556d?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf39",
+      "volume": "",
+      "weight": "",
+      "product_type": "Truffle",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 23,
+    "fields": {
+      "category": 2,
+      "name": "Champagne Truffle",
+      "price": "450.00",
+      "tag": "Premium",
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1528825871115-3581a5387919?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83e\udd42",
+      "volume": "",
+      "weight": "",
+      "product_type": "Truffle",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 24,
+    "fields": {
+      "category": 2,
+      "name": "Saffron Milk Chocolate",
+      "price": "420.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf3c",
+      "volume": "",
+      "weight": "",
+      "product_type": "Milk",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 25,
+    "fields": {
+      "category": 2,
+      "name": "White Chocolate Bar",
+      "price": "240.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83e\udd0d",
+      "volume": "",
+      "weight": "",
+      "product_type": "White",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 26,
+    "fields": {
+      "category": 2,
+      "name": "Orange Zest Dark",
+      "price": "270.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Chocolate",
+      "image_url": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf4a",
+      "volume": "",
+      "weight": "",
+      "product_type": "Dark",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 27,
+    "fields": {
+      "category": 3,
+      "name": "Pashmina Silk Blend",
+      "price": "3200.00",
+      "tag": "Bestseller",
+      "availability": "in",
+      "label": "Shawl",
+      "image_url": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80",
+      "colors": [
+        "Dusty Rose",
+        "Ivory White",
+        "Mauve",
+        "Teal"
+      ],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf3f",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 28,
+    "fields": {
+      "category": 3,
+      "name": "Embroidered Kashmir Shawl",
+      "price": "4800.00",
+      "tag": "Handcrafted",
+      "availability": "in",
+      "label": "Shawl",
+      "image_url": "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80",
+      "colors": [
+        "Navy Blue",
+        "Wine Red",
+        "Forest Green"
+      ],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf3f",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 29,
+    "fields": {
+      "category": 3,
+      "name": "Wool Blend Stole",
+      "price": "1950.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Shawl",
+      "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&q=80",
+      "colors": [
+        "Camel Tan",
+        "Charcoal",
+        "Cream",
+        "Mustard"
+      ],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf3f",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 30,
+    "fields": {
+      "category": 3,
+      "name": "Floral Printed Dupatta",
+      "price": "1600.00",
+      "tag": "New",
+      "availability": "in",
+      "label": "Shawl",
+      "image_url": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80",
+      "colors": [
+        "Blush",
+        "Ivory White",
+        "Cobalt"
+      ],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf3f",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 31,
+    "fields": {
+      "category": 4,
+      "name": "Mountain Mist EDP",
+      "price": "2800.00",
+      "tag": "Signature",
+      "availability": "in",
+      "label": "Perfume",
+      "image_url": "https://images.unsplash.com/photo-1541643600914-78b084683702?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "Cedar \u00b7 Vetiver \u00b7 Musk",
+      "emoji": "\ud83c\udf38",
+      "volume": "50ml",
+      "weight": "",
+      "product_type": "EDP",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 32,
+    "fields": {
+      "category": 4,
+      "name": "Nilgiri Bloom Attar",
+      "price": "1850.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Perfume",
+      "image_url": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "Rose \u00b7 Jasmine \u00b7 Sandalwood",
+      "emoji": "\ud83c\udf38",
+      "volume": "10ml",
+      "weight": "",
+      "product_type": "Attar",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 33,
+    "fields": {
+      "category": 4,
+      "name": "Cozy Winter Cologne",
+      "price": "2200.00",
+      "tag": "Popular",
+      "availability": "in",
+      "label": "Perfume",
+      "image_url": "https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "Vanilla \u00b7 Amber \u00b7 Patchouli",
+      "emoji": "\ud83c\udf38",
+      "volume": "100ml",
+      "weight": "",
+      "product_type": "Cologne",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 34,
+    "fields": {
+      "category": 4,
+      "name": "Ooty Garden EDT",
+      "price": "3200.00",
+      "tag": "Limited",
+      "availability": "in",
+      "label": "Perfume",
+      "image_url": "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "Green Tea \u00b7 Bergamot \u00b7 White Musk",
+      "emoji": "\ud83c\udf38",
+      "volume": "75ml",
+      "weight": "",
+      "product_type": "EDT",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 35,
+    "fields": {
+      "category": 5,
+      "name": "Classic Woolen Beanie",
+      "price": "380.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Cap",
+      "image_url": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=400&q=80",
+      "colors": [
+        "Jet Black",
+        "Navy Blue",
+        "Wine Red",
+        "Forest Green"
+      ],
+      "sizes": [
+        "Free Size"
+      ],
+      "notes": "",
+      "emoji": "\ud83c\udfa9",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 36,
+    "fields": {
+      "category": 5,
+      "name": "Pom-Pom Knit Hat",
+      "price": "450.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Cap",
+      "image_url": "https://images.unsplash.com/photo-1609803384069-19f3f58e4d7a?w=400&q=80",
+      "colors": [
+        "Ivory White",
+        "Blush",
+        "Wine Red",
+        "Mustard"
+      ],
+      "sizes": [
+        "Free Size"
+      ],
+      "notes": "",
+      "emoji": "\ud83c\udfa9",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 37,
+    "fields": {
+      "category": 5,
+      "name": "Fleece-Lined Ear Cap",
+      "price": "520.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Cap",
+      "image_url": "https://images.unsplash.com/photo-1529231024920-9d27cf93d6c8?w=400&q=80",
+      "colors": [
+        "Jet Black",
+        "Charcoal",
+        "Camel Tan"
+      ],
+      "sizes": [
+        "Free Size",
+        "Kids"
+      ],
+      "notes": "",
+      "emoji": "\ud83c\udfa9",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 38,
+    "fields": {
+      "category": 5,
+      "name": "Sherpa Ushanka Cap",
+      "price": "650.00",
+      "tag": "Low Stock",
+      "availability": "lo",
+      "label": "Cap",
+      "image_url": "https://images.unsplash.com/photo-1510598155-b348f2fc74ce?w=400&q=80",
+      "colors": [
+        "Camel Tan",
+        "Cream",
+        "Slate Gray"
+      ],
+      "sizes": [
+        "Free Size"
+      ],
+      "notes": "",
+      "emoji": "\ud83c\udfa9",
+      "volume": "",
+      "weight": "",
+      "product_type": "",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 39,
+    "fields": {
+      "category": 6,
+      "name": "Nilgiri Premium CTC",
+      "price": "320.00",
+      "tag": "Bestseller",
+      "availability": "in",
+      "label": "Tea",
+      "image_url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf75",
+      "volume": "",
+      "weight": "250g",
+      "product_type": "CTC",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 40,
+    "fields": {
+      "category": 6,
+      "name": "Ooty Special Green Tea",
+      "price": "480.00",
+      "tag": "Organic",
+      "availability": "in",
+      "label": "Tea",
+      "image_url": "https://images.unsplash.com/photo-1563911892437-1feda0179e1b?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf75",
+      "volume": "",
+      "weight": "100g",
+      "product_type": "Green",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 41,
+    "fields": {
+      "category": 6,
+      "name": "Masala Chai Blend",
+      "price": "280.00",
+      "tag": null,
+      "availability": "in",
+      "label": "Tea",
+      "image_url": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf75",
+      "volume": "",
+      "weight": "200g",
+      "product_type": "Masala",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.product",
+    "pk": 42,
+    "fields": {
+      "category": 6,
+      "name": "Earl Grey Reserve",
+      "price": "560.00",
+      "tag": "Premium",
+      "availability": "in",
+      "label": "Tea",
+      "image_url": "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=500&q=80",
+      "colors": [],
+      "sizes": [],
+      "notes": "",
+      "emoji": "\ud83c\udf75",
+      "volume": "",
+      "weight": "100g",
+      "product_type": "Earl Grey",
+      "is_active": true,
+      "created_at": "2026-01-01T00:00:00Z"
+    }
+  }
 ]
