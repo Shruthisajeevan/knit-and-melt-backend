@@ -7,5 +7,5 @@ mkdir -p staticfiles
 python manage.py collectstatic --noinput
 
 python manage.py migrate
+python manage.py seed_products
 
-python manage.py loaddata api/fixtures/initial_data.json
