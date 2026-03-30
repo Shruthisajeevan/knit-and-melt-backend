@@ -2,6 +2,7 @@ from rest_framework import generics, status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import Product, Category, Order
+from django.db.models import Q
 from .serializers import ProductSerializer, CategorySerializer, OrderSerializer
 
 @api_view(['GET'])
@@ -15,7 +16,7 @@ class ProductListView(generics.ListAPIView):
         qs = Product.objects.filter(is_active=True)
         category = self.request.query_params.get('category')
         if category:
-            qs = qs.filter(category__slug=category)
+            qs = qs.filter(Q(category__slug=category) | Q(category__name__iexact=category))
         return qs
 
 class ProductDetailView(generics.RetrieveAPIView):
