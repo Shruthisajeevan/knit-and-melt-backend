@@ -15,8 +15,18 @@ class ProductListView(generics.ListAPIView):
     def get_queryset(self):
         qs = Product.objects.filter(is_active=True)
         category = self.request.query_params.get('category')
+
         if category:
-            qs = qs.filter(Q(category__slug=category) | Q(category__name__iexact=category))
+            category_aliases = {
+                'teas': 'tea',
+            }
+
+            category = category_aliases.get(category.lower(), category)
+
+            qs = qs.filter(
+                Q(category__slug=category) |
+                Q(category__name__iexact=category)
+            )
         return qs
 
 class ProductDetailView(generics.RetrieveAPIView):
